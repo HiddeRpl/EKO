@@ -1,39 +1,31 @@
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+@import "variables";
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+a, button {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-.valign-center {
-  display: flex;
-  align-items: center;
+a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
-.halign-center {
-  display: flex;
-  justify-content: center;
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
 }
+
+
+@import "grid";
+@import "navbar";
+@import "slider";
+
 
