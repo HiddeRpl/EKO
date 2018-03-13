@@ -1,0 +1,59 @@
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    height: 25vh;
+  }
+
+  .slide {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    @media only screen and (max-width: 768px) {
+      height: 25vh;
+      background-position: right;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .slide:nth-child(#{$i}) {
+      background: url('../images/eko-slider#{$i}.jpg') no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  .slider__nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &--left {
+      left: 20px;
+    }
+
+    &--right {
+      right: 20px;
+    }
+  }
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in;
+}
+
+@for $i from 0 through 2 {
+  .slider-#{$i} {
+    transform: translateX(calc(#{$i} * -100vw));
+  }
+}

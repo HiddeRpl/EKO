@@ -5,7 +5,15 @@
 }
 
 .navbar {
-  background-color: var(--color-default-light);
+  background-color: var(--navbar-color);
+  @media only screen and (max-width: 768px) {
+    background-color: var(--color-default-light);
+    position: fixed;
+  }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
   &__logo {
     height: calc(var(--navbar-height) - 10px);
@@ -58,7 +66,7 @@
     top: 0;
     z-index: -1;
     transition: transform 0.3s ease-in;
-    transform: translateY(-150px);
+    transform: translateY(-170px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 
     &__link {
