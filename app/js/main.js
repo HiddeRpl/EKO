@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    'use strict';
+
     // ### HAMBURGER ###
     const hamburger = document.querySelector('.hamClick');
     const navMobile = document.querySelector('.navMobile');

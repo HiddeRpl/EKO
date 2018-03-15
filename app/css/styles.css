@@ -21,6 +21,38 @@ a:hover, a:focus {
   .content {
     padding-top: var(--navbar-height); } }
 
+.welcome-title {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20vw;
+  margin: auto;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-default-light);
+  text-shadow: 1px 1px 5px black;
+  font-size: 1.3em; }
+  @media only screen and (max-width: 768px) {
+    .welcome-title {
+      font-size: 0.5em;
+      left: 0;
+      right: 0; } }
+  .welcome-title .title {
+    margin-bottom: 0; }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -97,13 +129,17 @@ a:hover, a:focus {
 
 .navbar {
   background-color: var(--navbar-color);
+  color: var(--color-default-light);
+  text-shadow: 1px 1px 5px black;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 3; }
   @media only screen and (max-width: 768px) {
     .navbar {
       background-color: var(--color-default-light);
+      color: var(--color-default-dark);
+      text-shadow: none;
       position: fixed; } }
   .navbar__logo {
     height: calc(var(--navbar-height) - 10px);
@@ -147,7 +183,7 @@ a:hover, a:focus {
             flex-direction: column;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: 2;
     -webkit-transition: -webkit-transform 0.3s ease-in;
     transition: -webkit-transform 0.3s ease-in;
     transition: transform 0.3s ease-in;
@@ -217,47 +253,8 @@ a:hover, a:focus {
   .hamburger {
     display: none; } }
 
-@-webkit-keyframes slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  27% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  33% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw); }
-  60% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw); }
-  66% {
-    -webkit-transform: translateX(-200vw);
-            transform: translateX(-200vw); }
-  100% {
-    -webkit-transform: translateX(-200vw);
-            transform: translateX(-200vw); } }
-
-@keyframes slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  27% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  33% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw); }
-  60% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw); }
-  66% {
-    -webkit-transform: translateX(-200vw);
-            transform: translateX(-200vw); }
-  100% {
-    -webkit-transform: translateX(-200vw);
-            transform: translateX(-200vw); } }
-
 .slider {
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden; }
@@ -272,20 +269,20 @@ a:hover, a:focus {
         -ms-flex-positive: 0;
             flex-grow: 0;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
     @media only screen and (max-width: 768px) {
       .slider .slide {
         height: 25vh;
         background-position: right; } }
-  .slider .slide:nth-child(1) {
-    background: url("../images/eko-slider1.jpg") no-repeat center center;
-    background-size: cover; }
-  .slider .slide:nth-child(2) {
-    background: url("../images/eko-slider2.jpg") no-repeat center center;
-    background-size: cover; }
-  .slider .slide:nth-child(3) {
-    background: url("../images/eko-slider3.jpg") no-repeat center center;
-    background-size: cover; }
+  .slider .slide.loaded:nth-child(1) {
+    background-image: url("../images/eko-slider1.webp"); }
+  .slider .slide.loaded:nth-child(2) {
+    background-image: url("../images/eko-slider2.webp"); }
+  .slider .slide.loaded:nth-child(3) {
+    background-image: url("../images/eko-slider3.webp"); }
   .slider .slider__nav {
     position: absolute;
     top: 0;

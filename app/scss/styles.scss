@@ -27,6 +27,32 @@ a:hover, a:focus {
   }
 }
 
+.welcome-title {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20vw;
+  margin: auto;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-default-light);
+  text-shadow: 1px 1px 5px black;
+  font-size: 1.3em;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5em;
+    left: 0;
+    right: 0;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+}
+
 @import "grid";
 @import "navbar";
 @import "slider";

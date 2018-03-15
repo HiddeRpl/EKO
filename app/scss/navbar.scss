@@ -6,14 +6,18 @@
 
 .navbar {
   background-color: var(--navbar-color);
+  color: var(--color-default-light);
+  text-shadow: 1px 1px 5px black;
   @media only screen and (max-width: 768px) {
     background-color: var(--color-default-light);
+    color: var(--color-default-dark);
+    text-shadow: none;
     position: fixed;
   }
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 
   &__logo {
     height: calc(var(--navbar-height) - 10px);
@@ -64,7 +68,7 @@
     flex-direction: column;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: 2;
     transition: transform 0.3s ease-in;
     transform: translateY(-170px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);

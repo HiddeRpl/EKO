@@ -50,17 +50,21 @@
 </header>
 
 <main class="content">
-<section class="slider">
-    <div class="slider-wrapper" aria-hidden="true">
-        <figure class="slide"></figure>
-        <figure class="slide"></figure>
-        <figure class="slide"></figure>
-    </div>
-    <nav aria-hidden="true">
-        <img class="slider__nav slider__nav--left goLeft" src="images/icons/arrow_left.svg" alt="Arrow left">
-        <img class="slider__nav slider__nav--right goRight" src="images/icons/arrow_right.svg" alt="Arrow right">
-    </nav>
-</section>
+    <section class="slider">
+        <div class="welcome-title">
+            <h1 class="title">EKO</h1>
+            <h2 class="subtitle">KABINY TOALETOWE</h2>
+        </div>
+        <div class="slider-wrapper" aria-hidden="true">
+            <figure class="slide"></figure>
+            <figure class="slide"></figure>
+            <figure class="slide"></figure>
+        </div>
+        <nav aria-hidden="true">
+            <img class="slider__nav slider__nav--left goLeft" src="images/icons/arrow_left.svg" alt="Arrow left">
+            <img class="slider__nav slider__nav--right goRight" src="images/icons/arrow_right.svg" alt="Arrow right">
+        </nav>
+    </section>
 </main>
 
 <footer>
@@ -68,8 +72,8 @@
 </footer>
 
 <!--build:js js/main.min.js-->
-<script src="js/main.js">
-</script>
+<script src="js/main.js"></script>
+<script src="js/intersectionObs.js"></script>
 <!--endbuild-->
 </body>
 </html>
