@@ -1,3 +1,8 @@
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in;
+}
+
 .slider {
   position: relative;
   width: 100vw;
@@ -19,6 +24,12 @@
       height: 25vh;
       background-position: right;
     }
+
+    &__overlay {
+      background: url('../images/overlay.png') repeat;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @for $i from 1 through 3 {
@@ -29,6 +40,8 @@
   }
 
   .slider__nav {
+    color: var(--color-default-light);
+    font-size: 2.5rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -50,10 +63,6 @@
   }
 }
 
-.slider-wrapper {
-  display: flex;
-  transition: transform 0.6s ease-in;
-}
 
 @for $i from 0 through 2 {
   .slider-#{$i} {

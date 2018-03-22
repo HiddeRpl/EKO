@@ -321,6 +321,15 @@ a:hover, a:focus {
   .hamburger {
     display: none; } }
 
+.slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.6s ease-in;
+  transition: -webkit-transform 0.6s ease-in;
+  transition: transform 0.6s ease-in;
+  transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in; }
+
 .slider {
   position: relative;
   width: 100vw;
@@ -345,6 +354,10 @@ a:hover, a:focus {
       .slider .slide {
         height: 25vh;
         background-position: right; } }
+    .slider .slide__overlay {
+      background: url("../images/overlay.png") repeat;
+      height: 100%;
+      width: 100%; }
   .slider .slide.loaded:nth-child(1) {
     background: url("../images/eko-slider1.webp") center center/cover no-repeat;
     opacity: 1; }
@@ -355,6 +368,8 @@ a:hover, a:focus {
     background: url("../images/eko-slider3.webp") center center/cover no-repeat;
     opacity: 1; }
   .slider .slider__nav {
+    color: var(--color-default-light);
+    font-size: 2.5rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -369,15 +384,6 @@ a:hover, a:focus {
       left: 20px; }
     .slider .slider__nav--right {
       right: 20px; }
-
-.slider-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: -webkit-transform 0.6s ease-in;
-  transition: -webkit-transform 0.6s ease-in;
-  transition: transform 0.6s ease-in;
-  transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in; }
 
 .slider-0 {
   -webkit-transform: translateX(calc(0 * -100vw));
