@@ -60,4 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // ### END ###
 
+    // ### NAVBAR COLLAPSE ###
+    window.addEventListener('scroll', function () {
+        if (window.innerWidth > 768) {
+            const nav = document.querySelector('.navbarCollapse');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            }
+            else {
+                nav.classList.remove('scrolled');
+            }
+        }
+    })
+    // ### END ###
+
 });

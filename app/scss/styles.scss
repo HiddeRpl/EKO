@@ -1,5 +1,15 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  color: var(--color-text);
+  letter-spacing: 1.1px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -53,8 +63,32 @@ a:hover, a:focus {
   }
 }
 
+.section-title {
+  font-size: 1.9em;
+}
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: space-between;
+  & > * {
+    flex: 0 1 49%;
+    max-width: 49%;
+    @media only screen and (max-width: 768px) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 @import "grid";
 @import "navbar";
 @import "slider";
+@import "percentage-bar";
 
 

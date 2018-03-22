@@ -13,9 +13,8 @@
     height: 100vh;
     flex-grow: 0;
     flex-shrink: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
     @media only screen and (max-width: 768px) {
       height: 25vh;
       background-position: right;
@@ -24,7 +23,8 @@
 
   @for $i from 1 through 3 {
     .slide.loaded:nth-child(#{$i}) {
-      background-image: url('../images/eko-slider#{$i}.webp');
+      background: url('../images/eko-slider#{$i}.webp') center center/cover no-repeat;
+      opacity: 1;
     }
   }
 

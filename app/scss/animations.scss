@@ -1,0 +1,12 @@
+@import "variables";
+
+@keyframes navbarCollapse {
+  from {
+    opacity: 0;
+    top: calc(var(--navbar-height) * -0.5);
+  }
+  to {
+    top: 0;
+    opacity: 0.8;
+  }
+}

@@ -21,6 +21,7 @@
     <link rel="author" href="https://www.linkedin.com/in/miko%C5%82aj-jarmu%C5%82a/">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="apple-touch-icon" href="images/eko-logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="lib/Normalize/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -33,7 +34,7 @@
     <![endif]-->
 </head>
 <body>
-<header class="navbar">
+<header class="navbar navbarCollapse">
     <div class="container navbar-container">
         <a href="#Strona_Główna"><img class="navbar__logo" itemprop="logo" src="images/eko-logo.png" alt="EKO"></a>
         <div class="spacer"></div>
@@ -50,7 +51,7 @@
 </header>
 
 <main class="content">
-    <section class="slider">
+    <section id="slider" class="slider">
         <div class="welcome-title">
             <h1 class="title">EKO</h1>
             <h2 class="subtitle">KABINY TOALETOWE</h2>
@@ -64,6 +65,62 @@
             <img class="slider__nav slider__nav--left goLeft" src="images/icons/arrow_left.svg" alt="Arrow left">
             <img class="slider__nav slider__nav--right goRight" src="images/icons/arrow_right.svg" alt="Arrow right">
         </nav>
+    </section>
+    <section id="about-us" class="about-us container col-2">
+        <article>
+            <h3 class="section-title">O NAS</h3>
+            <p>
+                Firma nasza funkcjonuje na rynku wielkopolskim od 1998r. Głównym przedmiotem działalności jest wynajem i
+                serwis przenośnych bezodpływowych kabin toaletowych. Kabiny nasze są trwałe, estetyczne i funkcjonalne,
+                a ich największą zaletą jest fakt, iż nie wymagają podłączenia do sieci kanalizacyjnej. Nasza baza
+                techniczno-organizacyjna oraz dynamika rozwoju i działania sprawia, że jesteśmy przygotowani do
+                zabezpieczania potrzeb naszych klientów (w tym również niepełnosprawnych) w każdych warunkach
+                technicznych, geograficznych i atmosferycznych przez 24 godziny na dobę. Wszystko to oferujemy w formie
+                najmu na dowolny okres z jednoczesnym kompleksowym serwisem asenizacyjnym, sanitarnym i technicznym.
+            </p>
+            <p>
+                Wykonywany przez naszą Firmę serwis kabiny toaletowej dokonywany jest przy użyciu nowoczesnego sprzętu
+                oczyszczającego oraz środków biologicznych przyjaznych dla środowiska i nie zawierających aldehydów,
+                posiadających atesty higieniczne Państwowego Zakładu Higieny - HK/B/1710/01/98, HK/B/0016/01/98.
+            </p>
+            <p>
+                Usługi serwisowe świadczymy także na zamówienie telefoniczne lub faksowe, i wykonujemy je niezwłocznie
+                po otrzymaniu zgłoszenia.
+                <br>
+                Zalecana częstotliwość serwisów kabiny toaletowej uzależniona jest od ilości pracowników na placu
+                budowy i kształtuje się odpowiednio:
+            </p>
+            <ul>
+                <li>do 3 pracowników - jeden serwis w miesiącu</li>
+                <li>do 8 pracowników - dwa serwisy w miesiącu</li>
+                <li>powyżej 8 pracowników - cztery serwisy w miesiącu</li>
+            </ul>
+            <p>
+                Ceny na wynajem i serwis kabin toaletowych mogą być każdorazowo przedmiotem negocjacji w zależności od:
+            </p>
+            <ul>
+                <li>ilości wynajmowanych kabin</li>
+                <li>okresu wynajmu</li>
+            </ul>
+        </article>
+        <div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 50%">50%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 82%">82%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 95%">95%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 72%">72%</span>
+            </div>
+        </div>
     </section>
 </main>
 

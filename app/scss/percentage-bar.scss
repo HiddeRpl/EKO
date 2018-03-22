@@ -1,0 +1,27 @@
+@import "variables";
+
+.percentage {
+
+  &__title {
+    width: 100%;
+    position: relative;
+    color: var(--color-default-dark);
+    margin-bottom: 6px;
+    margin-top: 19px;
+    font-size: 1.1em;
+    letter-spacing: initial;
+    font-weight: normal;
+  }
+
+  &__bar {
+    box-sizing: border-box;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    background-color: var(--color-accent);
+    color: var(--color-default-light);
+    text-align: right;
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+}
