@@ -159,14 +159,18 @@ a:hover, a:focus {
 
   &__image {
     margin: 0;
+    transition: opacity 0.6s ease;
+    opacity: 0;
   }
 
-  .webp &__image {
+  .webp &__image.loaded {
     background: url('../images/eko-serwis.webp') center center/cover no-repeat;
+    opacity: 1;
   }
 
-  .no-webp &__image {
+  .no-webp &__image.loaded {
     background: url('../images/eko-serwis.jpg') center center/cover no-repeat;
+    opacity: 1;
   }
 
   &__container {

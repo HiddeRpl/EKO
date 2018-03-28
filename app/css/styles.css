@@ -155,11 +155,16 @@ a:hover, a:focus {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
   .service__image {
-    margin: 0; }
-  .webp .service__image {
-    background: url("../images/eko-serwis.webp") center center/cover no-repeat; }
-  .no-webp .service__image {
-    background: url("../images/eko-serwis.jpg") center center/cover no-repeat; }
+    margin: 0;
+    -webkit-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+    opacity: 0; }
+  .webp .service__image.loaded {
+    background: url("../images/eko-serwis.webp") center center/cover no-repeat;
+    opacity: 1; }
+  .no-webp .service__image.loaded {
+    background: url("../images/eko-serwis.jpg") center center/cover no-repeat;
+    opacity: 1; }
   .service__container {
     padding-left: 15px;
     padding-right: 15px;
