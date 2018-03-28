@@ -21,21 +21,21 @@
     <link rel="author" href="https://www.linkedin.com/in/miko%C5%82aj-jarmu%C5%82a/">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="apple-touch-icon" href="images/eko-logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="lib/Normalize/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--endbuild-->
 
     <title>EKO - Przenośne kabiny toaletowe</title>
-
+    <script src="lib/Modernizr/modernizr-custom.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 </head>
 <body>
 <header class="navbar navbarCollapse">
-    <div class="container navbar-container">
+    <div class="navbar-container">
         <a href="#Strona_Główna"><img class="navbar__logo" itemprop="logo" src="images/eko-logo.png" alt="EKO"></a>
         <div class="spacer"></div>
         <button type="button" class="hamburger hamClick" aria-label="Open menu"></button>
@@ -132,14 +132,91 @@
             </div>
         </div>
     </section>
+    <section id="features" class="features section-background">
+        <div class="container">
+            <h3 class="section-title text-center">KABINY TOALETOWE</h3>
+            <p class="section-subtitle text-center">zapewnią bezpieczeństwo sanitarne na:</p>
+            <div class="features-wrapper valign-center halign-spbetween">
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fab fa-angellist"></i>
+                </span>
+                    <h4 class="bold">FESTYNACH</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="far fa-play-circle"></i>
+                </span>
+                    <h4 class="bold">KONCERTACH</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fas fa-gavel"></i>
+                </span>
+                    <h4 class="bold">PLACACH BUDOWY</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fas fa-car"></i>
+                </span>
+                    <h4 class="bold">PARKINGACH</h4>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="col-2 service">
+        <figure class="service__image">
+        </figure>
+        <article class="service__container">
+            <h3 class="section-title text-center">SERWIS</h3>
+            <p class="section-subtitle text-center">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget
+                tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title1</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title2</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title3</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title4</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+        </article>
+    </section>
 </main>
 
 <footer>
 
 </footer>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 <!--build:js js/main.min.js-->
+<script src="lib/IntersectionObsPolyfill/intersection-observer.js"></script> <!--IntersectionObs Polyfill-->
 <script src="js/main.js"></script>
 <script src="js/intersectionObs.js"></script>
 <!--endbuild-->
@@ -149,7 +226,6 @@
 <!--openingHours - text-->
 <!--address - streetAddress, postalCode, addressLocality, addressRegion, addressCountry-->
 <!--geo - latitude, longitude (separate meta tag)-->
-<!--logo - imageobject-->
 <!--photo - imageobject-->
 <!--telephone - text-->
 <!--email - text-->

@@ -37,6 +37,10 @@ a:hover, a:focus {
   }
 }
 
+.section-background {
+  background-color: var(--background-color);
+}
+
 .welcome-title {
   z-index: 1;
   position: absolute;
@@ -67,6 +71,11 @@ a:hover, a:focus {
   font-size: 1.9em;
 }
 
+.section-subtitle {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
 .about-us {
   display: flex;
   flex-wrap: wrap;
@@ -82,6 +91,110 @@ a:hover, a:focus {
     @media only screen and (max-width: 768px) {
       flex-basis: 100%;
       max-width: 100%;
+    }
+  }
+}
+
+.features {
+  padding: 30px 0;
+
+  &-wrapper {
+    max-width: 900px;
+    margin: 90px auto 0;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 768px) {
+      flex-basis: 50%;
+      margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 375px) {
+      flex-basis: 100%;
+    }
+
+    &__icon {
+      background-color: var(--color-accent);
+      color: var(--color-default-light);
+      font-size: 30px;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      width: 80px;
+      position: relative;
+
+      &:before, &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+      }
+
+      &:before {
+        border-bottom: 20px solid var(--color-accent);
+        top: -20px;
+      }
+
+      &:after {
+        border-top: 20px solid var(--color-accent);
+        bottom: -20px;
+      }
+    }
+  }
+}
+
+.service {
+  background-color: var(--background-color);
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    margin: 0;
+  }
+
+  .webp &__image {
+    background: url('../images/eko-serwis.webp') center center/cover no-repeat;
+  }
+
+  .no-webp &__image {
+    background: url('../images/eko-serwis.jpg') center center/cover no-repeat;
+  }
+
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+
+  }
+
+  &__element {
+    display: flex;
+    margin-bottom: 6px;
+
+    &__icon {
+      padding: 0 15px;
+      margin: auto;
+      font-size: 2em;
+      color: var(--color-accent);
+    }
+
+    &__text {
+
+      .title {
+        margin-bottom: 0;
+      }
+      .text {
+        margin-top: 0.5em;
+      }
     }
   }
 }

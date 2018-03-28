@@ -29,6 +29,9 @@ a:hover, a:focus {
   .content {
     padding-top: var(--navbar-height); } }
 
+.section-background {
+  background-color: var(--background-color); }
+
 .welcome-title {
   z-index: 1;
   position: absolute;
@@ -64,6 +67,10 @@ a:hover, a:focus {
 .section-title {
   font-size: 1.9em; }
 
+.section-subtitle {
+  font-size: 1.1em;
+  margin-bottom: 30px; }
+
 .about-us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,22 +97,104 @@ a:hover, a:focus {
             flex-basis: 100%;
         max-width: 100%; } }
 
-.container {
+.features {
+  padding: 30px 0; }
+  .features-wrapper {
+    max-width: 900px;
+    margin: 90px auto 0; }
+    @media only screen and (max-width: 768px) {
+      .features-wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .features__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media only screen and (max-width: 768px) {
+      .features__element {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 375px) {
+      .features__element {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
+    .features__element__icon {
+      background-color: var(--color-accent);
+      color: var(--color-default-light);
+      font-size: 30px;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      width: 80px;
+      position: relative; }
+      .features__element__icon:before, .features__element__icon:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent; }
+      .features__element__icon:before {
+        border-bottom: 20px solid var(--color-accent);
+        top: -20px; }
+      .features__element__icon:after {
+        border-top: 20px solid var(--color-accent);
+        bottom: -20px; }
+
+.service {
+  background-color: var(--background-color); }
+  @media only screen and (max-width: 768px) {
+    .service {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .service__image {
+    margin: 0; }
+  .webp .service__image {
+    background: url("../images/eko-serwis.webp") center center/cover no-repeat; }
+  .no-webp .service__image {
+    background: url("../images/eko-serwis.jpg") center center/cover no-repeat; }
+  .service__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto; }
+  .service__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 6px; }
+    .service__element__icon {
+      padding: 0 15px;
+      margin: auto;
+      font-size: 2em;
+      color: var(--color-accent); }
+    .service__element__text .title {
+      margin-bottom: 0; }
+    .service__element__text .text {
+      margin-top: 0.5em; }
+
+.container, .navbar-container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
 @media (min-width: 768px) {
-  .container {
+  .container, .navbar-container {
     width: 750px; } }
 
 @media (min-width: 992px) {
-  .container {
+  .container, .navbar-container {
     width: 970px; } }
 
 @media (min-width: 1200px) {
-  .container {
+  .container, .navbar-container {
     width: 1170px; } }
 
 .container-fluid {
@@ -113,6 +202,12 @@ a:hover, a:focus {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+.text-center {
+  text-align: center; }
+
+.bold {
+  font-weight: 700; }
 
 .valign-center {
   display: -webkit-box;
@@ -155,6 +250,7 @@ a:hover, a:focus {
   --navbar-height: 70px;
   --navbar-color: transparent;
   --navbar-color-scrolled: #fff;
+  --background-color: #F6F6F6;
   --color-default-light: #fff;
   --color-default-dark: #000;
   --color-accent: #FF0000;
@@ -164,6 +260,7 @@ a:hover, a:focus {
   --navbar-height: 70px;
   --navbar-color: transparent;
   --navbar-color-scrolled: #fff;
+  --background-color: #F6F6F6;
   --color-default-light: #fff;
   --color-default-dark: #000;
   --color-accent: #FF0000;
@@ -189,6 +286,11 @@ a:hover, a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    width: 95vw;
+    padding: 0; } }
 
 .navbar {
   background-color: var(--navbar-color);
@@ -354,20 +456,37 @@ a:hover, a:focus {
       .slider .slide {
         height: 25vh;
         background-position: right; } }
-    .slider .slide__overlay {
+    .webp .slider .slide__overlay {
+      background: url("../images/overlay.webp") repeat;
+      height: 100%;
+      width: 100%; }
+    .no-webp .slider .slide__overlay {
       background: url("../images/overlay.png") repeat;
       height: 100%;
       width: 100%; }
-  .slider .slide.loaded:nth-child(1) {
+  .webp .slider .slide.loaded:nth-child(1) {
     background: url("../images/eko-slider1.webp") center center/cover no-repeat;
     opacity: 1; }
-  .slider .slide.loaded:nth-child(2) {
+  .no-webp .slider .slide.loaded:nth-child(1) {
+    background: url("../images/eko-slider1.jpg") center center/cover no-repeat;
+    opacity: 1; }
+  .webp .slider .slide.loaded:nth-child(2) {
     background: url("../images/eko-slider2.webp") center center/cover no-repeat;
     opacity: 1; }
-  .slider .slide.loaded:nth-child(3) {
+  .no-webp .slider .slide.loaded:nth-child(2) {
+    background: url("../images/eko-slider2.jpg") center center/cover no-repeat;
+    opacity: 1; }
+  .webp .slider .slide.loaded:nth-child(3) {
     background: url("../images/eko-slider3.webp") center center/cover no-repeat;
     opacity: 1; }
+  .no-webp .slider .slide.loaded:nth-child(3) {
+    background: url("../images/eko-slider3.jpg") center center/cover no-repeat;
+    opacity: 1; }
   .slider .slider__nav {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     color: var(--color-default-light);
     font-size: 2.5rem;
     position: absolute;
@@ -401,6 +520,7 @@ a:hover, a:focus {
   --navbar-height: 70px;
   --navbar-color: transparent;
   --navbar-color-scrolled: #fff;
+  --background-color: #F6F6F6;
   --color-default-light: #fff;
   --color-default-dark: #000;
   --color-accent: #FF0000;

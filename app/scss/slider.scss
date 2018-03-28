@@ -25,7 +25,13 @@
       background-position: right;
     }
 
-    &__overlay {
+    .webp &__overlay {
+      background: url('../images/overlay.webp') repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    .no-webp &__overlay {
       background: url('../images/overlay.png') repeat;
       height: 100%;
       width: 100%;
@@ -33,13 +39,19 @@
   }
 
   @for $i from 1 through 3 {
-    .slide.loaded:nth-child(#{$i}) {
+    .webp & .slide.loaded:nth-child(#{$i}) {
       background: url('../images/eko-slider#{$i}.webp') center center/cover no-repeat;
+      opacity: 1;
+    }
+
+    .no-webp & .slide.loaded:nth-child(#{$i}) {
+      background: url('../images/eko-slider#{$i}.jpg') center center/cover no-repeat;
       opacity: 1;
     }
   }
 
   .slider__nav {
+    user-select: none;
     color: var(--color-default-light);
     font-size: 2.5rem;
     position: absolute;

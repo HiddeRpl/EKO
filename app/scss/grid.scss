@@ -1,4 +1,4 @@
-.container {
+.container, .navbar-container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -6,17 +6,17 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container, .navbar-container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .navbar-container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .navbar-container {
     width: 1170px;
   }
 }
@@ -26,6 +26,14 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .valign-center {
