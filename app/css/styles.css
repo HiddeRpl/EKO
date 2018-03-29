@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif; }
@@ -71,14 +72,6 @@ a:hover, a:focus {
   font-size: 1.1em;
   margin-bottom: 30px; }
 
-.about-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 50px 0; }
-
 .col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +89,14 @@ a:hover, a:focus {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         max-width: 100%; } }
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0; }
 
 .features {
   padding: 30px 0; }
@@ -148,8 +149,98 @@ a:hover, a:focus {
         border-top: 20px solid var(--color-accent);
         bottom: -20px; }
 
+.attributes.container {
+  margin: 50px auto;
+  padding: 0; }
+
+.attributes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .attributes__element {
+    width: 50%;
+    height: 286px;
+    background-color: transparent;
+    color: var(--color-default-dark);
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; }
+    @media only screen and (max-width: 768px) {
+      .attributes__element {
+        min-width: 100%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .attributes__element:hover {
+      background-color: var(--color-accent);
+      color: var(--color-default-light); }
+    .attributes__element__image.image1 {
+      background: url("../images/eko-zdjęcie1.png") center center/cover no-repeat;
+      opacity: 1;
+      margin: 0;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .attributes__element__image.image1 {
+          display: none; } }
+    .attributes__element__image.image2 {
+      background: url("../images/eko-zdjęcie2.png") center center/cover no-repeat;
+      opacity: 1;
+      margin: 0;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .attributes__element__image.image2 {
+          display: none; } }
+    .attributes__element__image.image3 {
+      background: url("../images/eko-zdjęcie3.png") center center/cover no-repeat;
+      opacity: 1;
+      margin: 0;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .attributes__element__image.image3 {
+          display: none; } }
+    .attributes__element__image.image4 {
+      background: url("../images/eko-zdjęcie4.png") center center/cover no-repeat;
+      opacity: 1;
+      margin: 0;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .attributes__element__image.image4 {
+          display: none; } }
+    .attributes__element__text {
+      -ms-flex-item-align: center;
+          align-self: center;
+      padding: 0 15px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 600px) {
+        .attributes__element__text {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 100%;
+                  flex: 0 1 100%;
+          max-width: 100%;
+          text-align: center; } }
+
 .service {
-  background-color: var(--background-color); }
+  background-color: var(--background-color);
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline; }
   @media only screen and (max-width: 768px) {
     .service {
       -ms-flex-wrap: wrap;
@@ -168,7 +259,10 @@ a:hover, a:focus {
   .service__container {
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto; }
+    max-width: 600px; }
+    @media only screen and (max-width: 768px) {
+      .service__container {
+        margin: auto; } }
   .service__element {
     display: -webkit-box;
     display: -ms-flexbox;

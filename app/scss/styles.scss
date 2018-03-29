@@ -76,12 +76,6 @@ a:hover, a:focus {
   margin-bottom: 30px;
 }
 
-.about-us {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0;
-}
-
 .col-2 {
   display: flex;
   justify-content: space-between;
@@ -93,6 +87,12 @@ a:hover, a:focus {
       max-width: 100%;
     }
   }
+}
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
 }
 
 .features {
@@ -151,8 +151,62 @@ a:hover, a:focus {
   }
 }
 
+.attributes.container {
+  margin: 50px auto;
+  padding: 0;
+}
+
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__element {
+    width: 50%;
+    height: 286px;
+    background-color: transparent;
+    color: var(--color-default-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    @media only screen and (max-width: 768px) {
+      min-width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-default-light);
+    }
+
+    @for $i from 1 through 4 {
+      &__image.image#{$i} {
+        background: url('../images/eko-zdjęcie#{$i}.png') center center/cover no-repeat;
+        opacity: 1;
+        margin: 0;
+        flex: 0 1 50%;
+        max-width: 50%;
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+
+    &__text {
+      align-self: center;
+      padding: 0 15px;
+      box-sizing: border-box;
+      flex: 0 1 50%;
+      max-width: 50%;
+      @media only screen and (max-width: 600px) {
+        flex: 0 1 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
 .service {
   background-color: var(--background-color);
+  justify-content: baseline;
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
   }
@@ -176,8 +230,10 @@ a:hover, a:focus {
   &__container {
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
-
+    max-width: 600px;
+    @media only screen and (max-width: 768px) {
+      margin: auto;
+    }
   }
 
   &__element {
@@ -202,6 +258,7 @@ a:hover, a:focus {
     }
   }
 }
+
 
 @import "grid";
 @import "navbar";
