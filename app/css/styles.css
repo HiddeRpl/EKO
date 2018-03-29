@@ -9,7 +9,7 @@ body {
   line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif; }
 
 a, button {
   outline: none;
@@ -66,7 +66,8 @@ a:hover, a:focus {
     margin-bottom: 0; }
 
 .section-title {
-  font-size: 1.9em; }
+  font-size: 2.2em;
+  font-weight: 400; }
 
 .section-subtitle {
   font-size: 1.1em;
@@ -148,6 +149,9 @@ a:hover, a:focus {
       .features__element__icon:after {
         border-top: 20px solid var(--color-accent);
         bottom: -20px; }
+    .features__element__title {
+      font-weight: 400;
+      font-size: 1.3em; }
 
 .attributes.container {
   margin: 50px auto;
@@ -175,49 +179,65 @@ a:hover, a:focus {
       background-color: var(--color-accent);
       color: var(--color-default-light); }
     .attributes__element__image.image1 {
-      background: url("../images/eko-zdjęcie1.png") center center/cover no-repeat;
-      opacity: 1;
       margin: 0;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
-      max-width: 50%; }
+      max-width: 50%;
+      -webkit-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+      opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image1 {
           display: none; } }
-    .attributes__element__image.image2 {
-      background: url("../images/eko-zdjęcie2.png") center center/cover no-repeat;
+    .attributes__element__image.image1.loaded {
       opacity: 1;
+      background: url("../images/eko-zdjęcie1.png") center center/cover no-repeat; }
+    .attributes__element__image.image2 {
       margin: 0;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
-      max-width: 50%; }
+      max-width: 50%;
+      -webkit-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+      opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image2 {
           display: none; } }
-    .attributes__element__image.image3 {
-      background: url("../images/eko-zdjęcie3.png") center center/cover no-repeat;
+    .attributes__element__image.image2.loaded {
       opacity: 1;
+      background: url("../images/eko-zdjęcie2.png") center center/cover no-repeat; }
+    .attributes__element__image.image3 {
       margin: 0;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
-      max-width: 50%; }
+      max-width: 50%;
+      -webkit-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+      opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image3 {
           display: none; } }
-    .attributes__element__image.image4 {
-      background: url("../images/eko-zdjęcie4.png") center center/cover no-repeat;
+    .attributes__element__image.image3.loaded {
       opacity: 1;
+      background: url("../images/eko-zdjęcie3.png") center center/cover no-repeat; }
+    .attributes__element__image.image4 {
       margin: 0;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
-      max-width: 50%; }
+      max-width: 50%;
+      -webkit-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+      opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image4 {
           display: none; } }
+    .attributes__element__image.image4.loaded {
+      opacity: 1;
+      background: url("../images/eko-zdjęcie4.png") center center/cover no-repeat; }
     .attributes__element__text {
       -ms-flex-item-align: center;
           align-self: center;
@@ -274,7 +294,9 @@ a:hover, a:focus {
       font-size: 2em;
       color: var(--color-accent); }
     .service__element__text .title {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 1.25em; }
     .service__element__text .text {
       margin-top: 0.5em; }
 
@@ -307,6 +329,9 @@ a:hover, a:focus {
 
 .bold {
   font-weight: 700; }
+
+.not-bold {
+  font-weight: 400; }
 
 .valign-center {
   display: -webkit-box;
