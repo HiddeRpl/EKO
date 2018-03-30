@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33ae7f50-5103-4756-893d-ffd64c369465" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/css/styles.css" afterPath="$PROJECT_DIR$/app/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/app/images/eko-zdjęcie2.png" afterPath="$PROJECT_DIR$/app/images/eko-zdjęcie2.png" />
-      <change beforePath="$PROJECT_DIR$/app/images/eko-zdjęcie3.png" afterPath="$PROJECT_DIR$/app/images/eko-zdjęcie3.png" />
-      <change beforePath="$PROJECT_DIR$/app/images/eko-zdjęcie4.png" afterPath="$PROJECT_DIR$/app/images/eko-zdjęcie4.png" />
       <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change beforePath="$PROJECT_DIR$/app/js/intersectionObs.js" afterPath="$PROJECT_DIR$/app/js/intersectionObs.js" />
-      <change beforePath="$PROJECT_DIR$/app/scss/animations.scss" afterPath="$PROJECT_DIR$/app/scss/animations.scss" />
-      <change beforePath="$PROJECT_DIR$/app/scss/slider.scss" afterPath="$PROJECT_DIR$/app/scss/slider.scss" />
       <change beforePath="$PROJECT_DIR$/app/scss/styles.scss" afterPath="$PROJECT_DIR$/app/scss/styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,71 +20,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.48564592">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-                  <folding>
-                    <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slider.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scss/slider.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="542">
-                  <caret line="288" column="23" lean-forward="false" selection-start-line="288" selection-start-column="23" selection-end-line="288" selection-end-column="23" />
+                <state relative-caret-position="452">
+                  <caret line="293" column="7" lean-forward="false" selection-start-line="293" selection-start-column="7" selection-end-line="293" selection-end-column="7" />
                   <folding>
                     <element signature="e#1489#1547#0" expanded="false" />
                     <element signature="e#1559#2738#0" expanded="false" />
                     <element signature="e#2762#2800#0" expanded="false" />
                     <element signature="e#2814#4042#0" expanded="false" />
                     <element signature="e#4053#5009#0" expanded="false" />
+                    <element signature="e#5020#5242#0" expanded="false" />
+                    <element signature="e#5251#6265#0" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="animations.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scss/animations.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="intersectionObs.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/js/intersectionObs.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="474">
-                  <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="grid.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scss/grid.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -103,14 +45,17 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="251" column="18" lean-forward="true" selection-start-line="251" selection-start-column="18" selection-end-line="251" selection-end-column="18" />
+                <state relative-caret-position="675">
+                  <caret line="268" column="37" lean-forward="false" selection-start-line="268" selection-start-column="37" selection-end-line="268" selection-end-column="37" />
                   <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -134,6 +79,7 @@
       <find>container</find>
       <find>.loaded</find>
       <find>opacity: 1</find>
+      <find>h3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,9 +103,9 @@
         <option value="$PROJECT_DIR$/app/scss/cv.html" />
         <option value="$PROJECT_DIR$/app/scss/grid.scss" />
         <option value="$PROJECT_DIR$/app/scss/animations.scss" />
+        <option value="$PROJECT_DIR$/app/js/intersectionObs.js" />
         <option value="$PROJECT_DIR$/app/scss/styles.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/js/intersectionObs.js" />
       </list>
     </option>
   </component>
@@ -383,12 +329,12 @@
       <workItem from="1522153719808" duration="8817000" />
       <workItem from="1522231885362" duration="12259000" />
       <workItem from="1522310536925" duration="9997000" />
-      <workItem from="1522407551019" duration="6697000" />
+      <workItem from="1522407551019" duration="11597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108051000" />
+    <option name="totallyTimeSpent" value="112951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-186" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -466,8 +412,14 @@
         <state relative-caret-position="150">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -498,8 +450,14 @@
         <state relative-caret-position="150">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,6 +670,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/IntersectionObsPolyfill/intersection-observer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1416">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/grid.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -720,10 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/IntersectionObsPolyfill/intersection-observer.js">
+    <entry file="file://$PROJECT_DIR$/app/js/intersectionObs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1416">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="474">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -746,34 +712,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="288" column="23" lean-forward="false" selection-start-line="288" selection-start-column="23" selection-end-line="288" selection-end-column="23" />
+        <state relative-caret-position="452">
+          <caret line="293" column="7" lean-forward="false" selection-start-line="293" selection-start-column="7" selection-end-line="293" selection-end-column="7" />
           <folding>
             <element signature="e#1489#1547#0" expanded="false" />
             <element signature="e#1559#2738#0" expanded="false" />
             <element signature="e#2762#2800#0" expanded="false" />
             <element signature="e#2814#4042#0" expanded="false" />
             <element signature="e#4053#5009#0" expanded="false" />
+            <element signature="e#5020#5242#0" expanded="false" />
+            <element signature="e#5251#6265#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="675">
+          <caret line="268" column="37" lean-forward="false" selection-start-line="268" selection-start-column="37" selection-end-line="268" selection-end-column="37" />
           <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#6;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/intersectionObs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>

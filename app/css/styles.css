@@ -310,6 +310,53 @@ a:hover, a:focus {
       font-weight: 400;
       font-size: 1.3em; }
 
+.facts {
+  background: url("../images/eko-kawa.jpg") center center/cover no-repeat fixed;
+  -webkit-box-shadow: inset 0 0 1000px 1px black;
+          box-shadow: inset 0 0 1000px 1px black;
+  color: var(--color-default-light);
+  padding: 50px 0; }
+  .facts .facts-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .facts__element {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media only screen and (max-width: 1024px) {
+      .facts__element {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; } }
+    @media only screen and (max-width: 768px) {
+      .facts__element {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
+    .facts__element__number {
+      font-weight: 700;
+      font-size: 3em; }
+    .facts__element__icon {
+      font-size: 1.2em;
+      color: var(--color-accent);
+      position: relative; }
+      .facts__element__icon:before, .facts__element__icon:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 1px;
+        background-color: var(--color-accent); }
+      .facts__element__icon:before {
+        left: -50px; }
+      .facts__element__icon:after {
+        right: -50px; }
+    .facts__element__title {
+      margin: 0;
+      font-size: 1.3em; }
+
 .container, .navbar-container {
   padding-right: 15px;
   padding-left: 15px;

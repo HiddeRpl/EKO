@@ -291,6 +291,63 @@ a:hover, a:focus {
   }
 }
 
+.facts {
+  background: url('../images/eko-kawa.jpg') center center/cover no-repeat fixed;
+  box-shadow: inset 0 0 1000px 1px black;
+  color: var(--color-default-light);
+  padding: 50px 0;
+
+  .facts-wrapper {
+    flex-wrap: wrap;
+  }
+
+  &__element {
+    margin-top: 40px;
+    flex-direction: column;
+    @media only screen and (max-width: 1024px) {
+      flex-basis: 50%;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-basis: 100%;
+    }
+
+    &__number {
+      font-weight: 700;
+      font-size: 3em;
+    }
+
+    &__icon {
+      font-size: 1.2em;
+      color: var(--color-accent);
+      position: relative;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 1px;
+        background-color: var(--color-accent);
+      }
+
+      &:before {
+        left: -50px;
+      }
+
+      &:after {
+        right: -50px;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 1.3em;
+    }
+  }
+}
+
 
 @import "grid";
 @import "navbar";
