@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
 // Get all of the images that are marked up to lazy load
-    const images = document.querySelectorAll('.slide, .serviceImg, .attrImg');
+    const images = document.querySelectorAll('.slide, .serviceImg, .attrImg, .insidesImg');
     const config = {
         threshold: 0.5,
     };
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             // Are we in viewport?
             if (entry.intersectionRatio > 0) {
-                console.log('in view');
                 // Stop watching and load the image
                 observer.unobserve(entry.target);
                 applyImage(entry.target);
@@ -28,6 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function applyImage(image) {
-        image.classList.add('loaded');
+        if (image.tagName === 'IMG') {
+            Modernizr.on('webp', function (result) {
+                if (result) {
+                    image.dataset.src = image.dataset.webp;
+                    image.src = image.dataset.src;
+
+                }
+                else {
+                    image.dataset.src = image.dataset.jpg;
+                    image.src = image.dataset.src;
+
+                }
+            });
+        }
+        image.classList.add('fade-in');
     }
 });

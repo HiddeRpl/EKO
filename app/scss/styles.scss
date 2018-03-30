@@ -187,15 +187,17 @@ a:hover, a:focus {
         margin: 0;
         flex: 0 1 50%;
         max-width: 50%;
-        transition: opacity 0.6s ease;
         opacity: 0;
         @media only screen and (max-width: 600px) {
           display: none;
         }
       }
 
-      &__image.image#{$i}.loaded {
-        opacity: 1;
+      .webp &__image.image#{$i} {
+        background: url('../images/eko-zdjęcie#{$i}.webp') center center/cover no-repeat;
+      }
+
+      .no-webp &__image.image#{$i} {
         background: url('../images/eko-zdjęcie#{$i}.png') center center/cover no-repeat;
       }
     }
@@ -224,23 +226,21 @@ a:hover, a:focus {
 
   &__image {
     margin: 0;
-    transition: opacity 0.6s ease;
     opacity: 0;
   }
 
-  .webp &__image.loaded {
+  .webp &__image {
     background: url('../images/eko-serwis.webp') center center/cover no-repeat;
-    opacity: 1;
   }
 
-  .no-webp &__image.loaded {
+  .no-webp &__image {
     background: url('../images/eko-serwis.jpg') center center/cover no-repeat;
-    opacity: 1;
   }
 
   &__container {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 30px;
     max-width: 600px;
     @media only screen and (max-width: 768px) {
       margin: auto;
@@ -268,6 +268,25 @@ a:hover, a:focus {
       .text {
         margin-top: 0.5em;
       }
+    }
+  }
+}
+
+.toilets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__element {
+    padding: 0 50px 30px;
+
+    &__image {
+      opacity: 0;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 1.3em;
     }
   }
 }

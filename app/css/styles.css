@@ -184,14 +184,13 @@ a:hover, a:focus {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       max-width: 50%;
-      -webkit-transition: opacity 0.6s ease;
-      transition: opacity 0.6s ease;
       opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image1 {
           display: none; } }
-    .attributes__element__image.image1.loaded {
-      opacity: 1;
+    .webp .attributes__element__image.image1 {
+      background: url("../images/eko-zdjęcie1.webp") center center/cover no-repeat; }
+    .no-webp .attributes__element__image.image1 {
       background: url("../images/eko-zdjęcie1.png") center center/cover no-repeat; }
     .attributes__element__image.image2 {
       margin: 0;
@@ -199,14 +198,13 @@ a:hover, a:focus {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       max-width: 50%;
-      -webkit-transition: opacity 0.6s ease;
-      transition: opacity 0.6s ease;
       opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image2 {
           display: none; } }
-    .attributes__element__image.image2.loaded {
-      opacity: 1;
+    .webp .attributes__element__image.image2 {
+      background: url("../images/eko-zdjęcie2.webp") center center/cover no-repeat; }
+    .no-webp .attributes__element__image.image2 {
       background: url("../images/eko-zdjęcie2.png") center center/cover no-repeat; }
     .attributes__element__image.image3 {
       margin: 0;
@@ -214,14 +212,13 @@ a:hover, a:focus {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       max-width: 50%;
-      -webkit-transition: opacity 0.6s ease;
-      transition: opacity 0.6s ease;
       opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image3 {
           display: none; } }
-    .attributes__element__image.image3.loaded {
-      opacity: 1;
+    .webp .attributes__element__image.image3 {
+      background: url("../images/eko-zdjęcie3.webp") center center/cover no-repeat; }
+    .no-webp .attributes__element__image.image3 {
       background: url("../images/eko-zdjęcie3.png") center center/cover no-repeat; }
     .attributes__element__image.image4 {
       margin: 0;
@@ -229,14 +226,13 @@ a:hover, a:focus {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       max-width: 50%;
-      -webkit-transition: opacity 0.6s ease;
-      transition: opacity 0.6s ease;
       opacity: 0; }
       @media only screen and (max-width: 600px) {
         .attributes__element__image.image4 {
           display: none; } }
-    .attributes__element__image.image4.loaded {
-      opacity: 1;
+    .webp .attributes__element__image.image4 {
+      background: url("../images/eko-zdjęcie4.webp") center center/cover no-repeat; }
+    .no-webp .attributes__element__image.image4 {
       background: url("../images/eko-zdjęcie4.png") center center/cover no-repeat; }
     .attributes__element__text {
       -ms-flex-item-align: center;
@@ -267,18 +263,15 @@ a:hover, a:focus {
           flex-wrap: wrap; } }
   .service__image {
     margin: 0;
-    -webkit-transition: opacity 0.6s ease;
-    transition: opacity 0.6s ease;
     opacity: 0; }
-  .webp .service__image.loaded {
-    background: url("../images/eko-serwis.webp") center center/cover no-repeat;
-    opacity: 1; }
-  .no-webp .service__image.loaded {
-    background: url("../images/eko-serwis.jpg") center center/cover no-repeat;
-    opacity: 1; }
+  .webp .service__image {
+    background: url("../images/eko-serwis.webp") center center/cover no-repeat; }
+  .no-webp .service__image {
+    background: url("../images/eko-serwis.jpg") center center/cover no-repeat; }
   .service__container {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 30px;
     max-width: 600px; }
     @media only screen and (max-width: 768px) {
       .service__container {
@@ -299,6 +292,23 @@ a:hover, a:focus {
       font-size: 1.25em; }
     .service__element__text .text {
       margin-top: 0.5em; }
+
+.toilets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .toilets__element {
+    padding: 0 50px 30px; }
+    .toilets__element__image {
+      opacity: 0; }
+    .toilets__element__title {
+      font-weight: 400;
+      font-size: 1.3em; }
 
 .container, .navbar-container {
   padding-right: 15px;
@@ -404,6 +414,28 @@ a:hover, a:focus {
     top: calc(var(--navbar-height) * -0.5); }
   to {
     top: 0;
+    opacity: 1; } }
+
+.fade-in {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
     opacity: 1; } }
 
 .navbar-container {
@@ -588,24 +620,18 @@ a:hover, a:focus {
       background: url("../images/overlay.png") repeat;
       height: 100%;
       width: 100%; }
-  .webp .slider .slide.loaded:nth-child(1) {
-    background: url("../images/eko-slider1.webp") center center/cover no-repeat;
-    opacity: 1; }
-  .no-webp .slider .slide.loaded:nth-child(1) {
-    background: url("../images/eko-slider1.jpg") center center/cover no-repeat;
-    opacity: 1; }
-  .webp .slider .slide.loaded:nth-child(2) {
-    background: url("../images/eko-slider2.webp") center center/cover no-repeat;
-    opacity: 1; }
-  .no-webp .slider .slide.loaded:nth-child(2) {
-    background: url("../images/eko-slider2.jpg") center center/cover no-repeat;
-    opacity: 1; }
-  .webp .slider .slide.loaded:nth-child(3) {
-    background: url("../images/eko-slider3.webp") center center/cover no-repeat;
-    opacity: 1; }
-  .no-webp .slider .slide.loaded:nth-child(3) {
-    background: url("../images/eko-slider3.jpg") center center/cover no-repeat;
-    opacity: 1; }
+  .webp .slider .slide:nth-child(1) {
+    background: url("../images/eko-slider1.webp") center center/cover no-repeat; }
+  .no-webp .slider .slide:nth-child(1) {
+    background: url("../images/eko-slider1.jpg") center center/cover no-repeat; }
+  .webp .slider .slide:nth-child(2) {
+    background: url("../images/eko-slider2.webp") center center/cover no-repeat; }
+  .no-webp .slider .slide:nth-child(2) {
+    background: url("../images/eko-slider2.jpg") center center/cover no-repeat; }
+  .webp .slider .slide:nth-child(3) {
+    background: url("../images/eko-slider3.webp") center center/cover no-repeat; }
+  .no-webp .slider .slide:nth-child(3) {
+    background: url("../images/eko-slider3.jpg") center center/cover no-repeat; }
   .slider .slider__nav {
     -webkit-user-select: none;
        -moz-user-select: none;
