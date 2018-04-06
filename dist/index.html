@@ -1,11 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl" dir="ltr" itemscope itemtype="http://schema.org/LocalBusiness">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta itemprop="url" content="https://ekokabiny.pl">
+    <meta name="description" content="Nasza firma oferuje serwis oraz najem trwałych, estetycznych, funkcjonalnych kabin,
+    które nie wymagają podłączenia do sieci kanalizacyjnej. Obługujemy imprezy o charakterze masowym, place budowy, parking, itp.">
+    <meta name="dcterms.description" lang="pl" content="Nasza firma oferuje serwis oraz najem trwałych, estetycznych, funkcjonalnych kabin,
+    które nie wymagają podłączenia do sieci kanalizacyjnej. Obługujemy imprezy o charakterze masowym, place budowy, parking, itp.">
+    <meta name="keywords" content="eko, wc, kabiny, toalety, wc przenośne, kabiny przenośne, toalety przenośne">
+    <meta name="dcterms.subject" lang="pl" content="eko, wc, kabiny, toalety, wc przenośne, kabiny przenośne, toalety przenośne">
+    <meta property="og:site_name" content="EKO - Przenośne kabiny toaletowe">
+    <meta property="og:url" content="https://ekokabiny.pl">
+    <meta property="og:title" content="Najsprawniejszym najem kabin oraz ich serwis">
+    <meta property="og:image" content="https://example.net/favicon.png">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="author" href="https://www.linkedin.com/in/miko%C5%82aj-jarmu%C5%82a/">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="apple-touch-icon" href="images/eko-logo.png">
     <link rel="stylesheet" href="css/styles.min.css">
+
+    <title>EKO - Przenośne kabiny toaletowe</title>
+    <script defer src="lib/Modernizr/modernizr-custom.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
+<header class="navbar navbarCollapse">
+    <div class="navbar-container">
+        <a href="#Strona_Główna">
+            <img class="navbar__logo" itemprop="logo" src="images/eko-logo.png" alt="EKO">
+        </a>
+        <div class="spacer"></div>
+        <button type="button" class="hamburger hamClick" aria-label="Open menu"></button>
+        <nav class="valign-center">
+            <ul class="navbar__nav halign-spbetween valign-center navMobile">
+                <li class="navbar__nav__link"><a href="#O_Nas">O NAS</a></li>
+                <li class="navbar__nav__link"><a href="#Serwis">SERWIS</a></li>
+                <li class="navbar__nav__link"><a href="#Wnetrza">WNĘTRZA</a></li>
+                <li class="navbar__nav__link"><a href="#Kontakt">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="content">
+    <section id="slider" class="slider">
+        <div class="welcome-title">
+            <h1 class="title">EKO</h1>
+            <h2 class="subtitle">KABINY TOALETOWE</h2>
+        </div>
+        <div class="slider-wrapper" aria-hidden="true">
+            <figure class="slide">
+                <div class="slide__overlay"></div>
+            </figure>
+            <figure class="slide">
+                <div class="slide__overlay"></div>
+            </figure>
+            <figure class="slide">
+                <div class="slide__overlay"></div>
+            </figure>
+        </div>
+        <nav aria-hidden="true">
+            <span class="slider__nav slider__nav--left goLeft">
+                <i class="fas fa-angle-left"></i>
+            </span>
+            <span class="slider__nav slider__nav--right goRight">
+                <i class="fas fa-angle-right"></i>
+            </span>
+        </nav>
+    </section>
+    <section id="about-us" class="about-us container col-2">
+        <article>
+            <h3 class="section-title">O NAS</h3>
+            <p>
+                Firma nasza funkcjonuje na rynku wielkopolskim od 1998r. Głównym przedmiotem działalności jest wynajem i
+                serwis przenośnych bezodpływowych kabin toaletowych. Kabiny nasze są trwałe, estetyczne i funkcjonalne,
+                a ich największą zaletą jest fakt, iż nie wymagają podłączenia do sieci kanalizacyjnej. Nasza baza
+                techniczno-organizacyjna oraz dynamika rozwoju i działania sprawia, że jesteśmy przygotowani do
+                zabezpieczania potrzeb naszych klientów (w tym również niepełnosprawnych) w każdych warunkach
+                technicznych, geograficznych i atmosferycznych przez 24 godziny na dobę. Wszystko to oferujemy w formie
+                najmu na dowolny okres z jednoczesnym kompleksowym serwisem asenizacyjnym, sanitarnym i technicznym.
+            </p>
+            <p>
+                Wykonywany przez naszą Firmę serwis kabiny toaletowej dokonywany jest przy użyciu nowoczesnego sprzętu
+                oczyszczającego oraz środków biologicznych przyjaznych dla środowiska i nie zawierających aldehydów,
+                posiadających atesty higieniczne Państwowego Zakładu Higieny - HK/B/1710/01/98, HK/B/0016/01/98.
+            </p>
+            <p>
+                Usługi serwisowe świadczymy także na zamówienie telefoniczne lub faksowe, i wykonujemy je niezwłocznie
+                po otrzymaniu zgłoszenia.
+                <br>
+                Zalecana częstotliwość serwisów kabiny toaletowej uzależniona jest od ilości pracowników na placu
+                budowy i kształtuje się odpowiednio:
+            </p>
+            <ul>
+                <li>do 3 pracowników - jeden serwis w miesiącu</li>
+                <li>do 8 pracowników - dwa serwisy w miesiącu</li>
+                <li>powyżej 8 pracowników - cztery serwisy w miesiącu</li>
+            </ul>
+            <p>
+                Ceny na wynajem i serwis kabin toaletowych mogą być każdorazowo przedmiotem negocjacji w zależności od:
+            </p>
+            <ul>
+                <li>ilości wynajmowanych kabin</li>
+                <li>okresu wynajmu</li>
+            </ul>
+        </article>
+        <div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 50%">50%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 82%">82%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 95%">95%</span>
+            </div>
+            <div class="percentage">
+                <h5 class="percentage__title">Percentage title</h5>
+                <span class="percentage__bar" style="width: 72%">72%</span>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features section-background">
+        <div class="container">
+            <h3 class="section-title text-center">KABINY TOALETOWE</h3>
+            <p class="section-subtitle text-center">zapewnią bezpieczeństwo sanitarne na:</p>
+            <div class="features-wrapper valign-center halign-spbetween">
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fab fa-angellist"></i>
+                </span>
+                    <h4 class="features__element__title">FESTYNACH</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="far fa-play-circle"></i>
+                </span>
+                    <h4 class="features__element__title">KONCERTACH</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fas fa-gavel"></i>
+                </span>
+                    <h4 class="features__element__title">PLACACH BUDOWY</h4>
+                </article>
+                <article class="features__element valign-center">
+                <span class="features__element__icon halign-center">
+                    <i class="fas fa-car"></i>
+                </span>
+                    <h4 class="features__element__title">PARKINGACH</h4>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="attributes" class="container attributes">
+        <article class="attributes__element col-2">
+            <figure class="attributes__element__image image1 attrImg"></figure>
+            <p class="attributes__element__text">
+                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+        </article>
+        <article class="attributes__element col-2">
+            <figure class="attributes__element__image image2 attrImg"></figure>
+            <p class="attributes__element__text">Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+        </article>
+        <article class="attributes__element col-2">
+            <p class="attributes__element__text">
+                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+            <figure class="attributes__element__image image3 attrImg"></figure>
+        </article>
+        <article class="attributes__element col-2">
+            <p class="attributes__element__text">
+                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+            <figure class="attributes__element__image image4 attrImg"></figure>
+        </article>
+    </section>
+    <section id="service" class="col-2 service">
+        <figure class="service__image serviceImg">
+        </figure>
+        <article class="service__container">
+            <h3 class="section-title text-center">SERWIS</h3>
+            <p class="section-subtitle text-center">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget
+                tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title1</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title2</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title3</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+            <div class="service__element halign-center valign-center">
+                <span class="service__element__icon">
+                    <i class="far fa-star"></i>
+                </span>
+                <div class="service__element__text">
+                    <h4 class="title bold">Title4</h4>
+                    <p class="text">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="toilets" class="container">
+        <h3 class="section-title text-center">WARIANTY KABIN TOALETOWYCH</h3>
+        <div class="toilets">
+            <div class="toilets__element">
+                <img class="toilets__element__image insidesImg"
+                     data-webp="images/eko-wnetrze1.jpg"
+                     data-jpg="images/eko-wnetrze1.jpg"
+                     alt="Kabiny toaletowe bez umywalki">
+                <h4 class="text-center toilets__element__title">Wariant A</h4>
+            </div>
+            <div class="toilets__element">
+                <img class="toilets__element__image insidesImg"
+                     data-webp="images/eko-wnetrze2.jpg"
+                     data-jpg="images/eko-wnetrze2.jpg"
+                     alt="Kabiny toaletowe bez pisuaru">
+                <h4 class="text-center toilets__element__title">Wariant B</h4>
+            </div>
+            <div class="toilets__element">
+                <img class="toilets__element__image insidesImg"
+                     data-webp="images/eko-wnetrze3.jpg"
+                     data-jpg="images/eko-wnetrze3.jpg"
+                     alt="Kabiny toaletowe z pisuarem">
+                <h4 class="text-center toilets__element__title">Wariant C</h4>
+            </div>
+        </div>
+    </section>
+    <section id="facts" class="facts parallaxImg">
+        <div class="container">
+            <h3 class="section-title text-center">FAKTY O NAS</h3>
+            <p class="section-subtitle text-center">Recusandae nihil sit eligendi quasi labore soluta fugiat,
+                distinctio vitae voluptas natus ducimus.</p>
+            <div class="halign-spbetween facts-wrapper">
+                <div class="facts__element valign-center">
+                    <span class="facts__element__number">3212</span>
+                    <span class="facts__element__icon">
+                        <i class="fas fa-certificate"></i>
+                    </span>
+                    <h4 class="facts__element__title">ZADOWOLONYCH KLIENTÓW</h4>
+                </div>
+                <div class="facts__element valign-center">
+                    <span class="facts__element__number">415</span>
+                    <span class="facts__element__icon">
+                        <i class="fas fa-certificate"></i>
+                    </span>
+                    <h4 class="facts__element__title">KABIN</h4>
+                </div>
+                <div class="facts__element valign-center">
+                    <span class="facts__element__number">2135</span>
+                    <span class="facts__element__icon">
+                        <i class="fas fa-certificate"></i>
+                    </span>
+                    <h4 class="facts__element__title">TWEETS</h4>
+                </div>
+                <div class="facts__element valign-center">
+                    <span class="facts__element__number">765</span>
+                    <span class="facts__element__icon">
+                        <i class="fas fa-certificate"></i>
+                    </span>
+                    <h4 class="facts__element__title">CUPS OF COFFEE</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>
+<!--itemprop-->
+<!--openingHours - text-->
+<!--address - streetAddress, postalCode, addressLocality, addressRegion, addressCountry-->
+<!--geo - latitude, longitude (separate meta tag)-->
+<!--photo - imageobject-->
+<!--telephone - text-->
+<!--email - text-->

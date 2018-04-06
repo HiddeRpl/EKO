@@ -26,7 +26,7 @@ gulp.task('sass', function () {
 gulp.task('browserSync', function () {
     browserSync.init({
         server: {
-            baseDir: 'app'
+            baseDir: 'dist'
         }
     })
 });
@@ -54,7 +54,7 @@ gulp.task('jsminify', function () {
 });
 
 gulp.task('imagemin', function () {
-    return gulp.src('app/images/**/*.+(png|jpg|giv|svg)')
+    return gulp.src('app/images/**/*.+(png|jpg|giv|svg|webp)')
         .pipe(cache(imagemin()))
         .pipe(gulp.dest('dist/images'))
 });
@@ -64,15 +64,15 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('dist/fonts'))
 });
 
-// gulp.task('lib', function () {
-//     return gulp.src('app/lib/zenscroll-latest/zenscroll-min.js')
-//         .pipe(gulp.dest('dist/lib/zenscroll-latest/'))
-// });
+gulp.task('lib', function () {
+    return gulp.src('app/lib//**/*')
+        .pipe(gulp.dest('dist/lib/'))
+});
 
 gulp.task('clean:dist', function () {
     return del.sync('dist');
 });
 
 gulp.task('build', function () {
-    runSequence('clean:dist', 'sass', 'useref', 'jsminify', 'imagemin', 'fonts')
+    runSequence('clean:dist', 'sass', 'useref', 'jsminify', 'imagemin', 'fonts', 'lib')
 });

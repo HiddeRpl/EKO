@@ -39,11 +39,11 @@
   }
 
   @for $i from 1 through 3 {
-    .webp & .slide:nth-child(#{$i}) {
+    .webp & .slide.fade-in:nth-child(#{$i}) {
       background: url('../images/eko-slider#{$i}.webp') center center/cover no-repeat;
     }
 
-    .no-webp & .slide:nth-child(#{$i}) {
+    .no-webp & .slide.fade-in:nth-child(#{$i}) {
       background: url('../images/eko-slider#{$i}.jpg') center center/cover no-repeat;
     }
   }

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
 // Get all of the images that are marked up to lazy load
-    const images = document.querySelectorAll('.slide, .serviceImg, .attrImg, .insidesImg');
+    const images = document.querySelectorAll('.slide, .serviceImg, .attrImg, .insidesImg, .parallaxImg');
     const config = {
         threshold: 0.5,
     };
