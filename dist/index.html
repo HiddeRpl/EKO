@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="EKO - Przenośne kabiny toaletowe">
     <meta property="og:url" content="https://ekokabiny.pl">
     <meta property="og:title" content="Najsprawniejszym najem kabin oraz ich serwis">
-    <meta property="og:image" content="https://example.net/favicon.png">
+    <meta property="og:image" content="favicon.png">
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="author" href="https://www.linkedin.com/in/miko%C5%82aj-jarmu%C5%82a/">
@@ -39,10 +39,11 @@
         <button type="button" class="hamburger hamClick" aria-label="Open menu"></button>
         <nav class="valign-center">
             <ul class="navbar__nav halign-spbetween valign-center navMobile">
-                <li class="navbar__nav__link"><a href="#O_Nas">O NAS</a></li>
-                <li class="navbar__nav__link"><a href="#Serwis">SERWIS</a></li>
-                <li class="navbar__nav__link"><a href="#Wnetrza">WNĘTRZA</a></li>
-                <li class="navbar__nav__link"><a href="#Kontakt">KONTAKT</a></li>
+                <li class="navbar__nav__link"><a href="#o_nas">O NAS</a></li>
+                <li class="navbar__nav__link"><a href="#serwis">SERWIS</a></li>
+                <li class="navbar__nav__link"><a href="#wnetrza">WNĘTRZA</a></li>
+                <li class="navbar__nav__link"><a href="#opinie">OPINIE</a></li>
+                <li class="navbar__nav__link"><a href="#kontakt">KONTAKT</a></li>
             </ul>
         </nav>
     </div>
@@ -74,7 +75,7 @@
             </span>
         </nav>
     </section>
-    <section id="about-us" class="about-us container col-2">
+    <section id="o_nas" class="about-us container col-2">
         <article>
             <h3 class="section-title">O NAS</h3>
             <p>
@@ -130,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section id="features" class="features section-background">
+    <section id="cechy" class="features section-background">
         <div class="container">
             <h3 class="section-title text-center">KABINY TOALETOWE</h3>
             <p class="section-subtitle text-center">zapewnią bezpieczeństwo sanitarne na:</p>
@@ -162,7 +163,7 @@
             </div>
         </div>
     </section>
-    <section id="attributes" class="container attributes">
+    <section id="atrybuty" class="container attributes">
         <article class="attributes__element col-2">
             <figure class="attributes__element__image image1 attrImg"></figure>
             <p class="attributes__element__text">
@@ -191,7 +192,7 @@
             <figure class="attributes__element__image image4 attrImg"></figure>
         </article>
     </section>
-    <section id="service" class="col-2 service">
+    <section id="serwis" class="col-2 service">
         <figure class="service__image serviceImg">
         </figure>
         <article class="section service__container">
@@ -236,7 +237,7 @@
             </div>
         </article>
     </section>
-    <section id="toilets" class="container section">
+    <section id="wnetrza" class="container section">
         <h3 class="section-title text-center">WARIANTY KABIN TOALETOWYCH</h3>
         <div class="toilets">
             <div class="toilets__element">
@@ -262,7 +263,7 @@
             </div>
         </div>
     </section>
-    <section id="facts" class="facts parallaxImg">
+    <section id="fakty" class="facts parallaxImg">
         <div class="container">
             <h3 class="section-title text-center">FAKTY O NAS</h3>
             <p class="section-subtitle text-center">Recusandae nihil sit eligendi quasi labore soluta fugiat,
@@ -299,7 +300,7 @@
             </div>
         </div>
     </section>
-    <section id="feedback" class="section-background">
+    <section id="opinie" class="section-background">
         <div class="container text-center">
             <h3 class="section-title">OPINIE</h3>
             <!--<p class="section-subtitle">Co klienci o nas mówią</p>-->
@@ -331,22 +332,29 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
+    <section id="kontakt" class="contact section">
+        <div class="contact--overlay"></div>
         <div class="container">
-            <form>
-                <label>Name</label>
-                <input name="name" placeholder="Type Here">
-
-                <label>Email</label>
-                <input name="email" type="email" placeholder="Type Here">
-
-                <label>Subject</label>
-                <input name="subject" placeholder="Type Here">
-
-                <label>Message</label>
-                <textarea name="message" placeholder="Type Here"></textarea>
-                <button name="submit">Submit</button>
-            </form>
+            <h3 class="section-title text-center">KONTAKT</h3>
+            <p class="section-subtitle text-center">Skontaktuj się z nami</p>
+            <div class="col-2">
+                <div id="map" class="map"></div>
+                <article class="contact__info">
+                    <p class="contact__info__el">
+                        <i class="fas fa-map-marker-alt icon"></i>Adres: Podarzewo 8, 62-010 Podarzewo
+                    </p>
+                    <p class="contact__info__el">
+                        <i class="fas fa-phone icon"></i>Telefon: 601-091-060
+                    </p>
+                    <p class="contact__info__el">
+                        <i class="fas fa-phone icon"></i>Telefon: 604-208-006
+                    </p>
+                    <p class="contact__info__el">
+                        <i class="fas fa-envelope icon"></i>
+                        Email: <a href="mailto:biuro@ekotoalety.pl">biuro@ekotoalety.pl</a>
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
 </main>
@@ -354,7 +362,12 @@
 <footer>
 
 </footer>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChGiVqmcl60298BRMpF4Go5AzQqD-jALA&callback=initMap">
+</script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

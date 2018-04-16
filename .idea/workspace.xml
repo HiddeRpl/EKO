@@ -276,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gulp.js.watch">
+  <component name="RunManager" selected="Gulp.js.build">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -322,8 +322,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.watch" />
         <item itemvalue="Gulp.js.build" />
+        <item itemvalue="Gulp.js.watch" />
         <item itemvalue="Gulp.js.favicon" />
       </list>
     </recent_temporary>
