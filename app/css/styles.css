@@ -97,13 +97,11 @@ a:hover, a:focus {
   .col-2 > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 49%;
-            flex: 0 1 49%;
-    max-width: 49%; }
+            flex: 0 1 49%; }
     @media only screen and (max-width: 768px) {
       .col-2 > * {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-        max-width: 100%; } }
+            flex-basis: 100%; } }
 
 .about-us {
   display: -webkit-box;
@@ -396,6 +394,49 @@ a:hover, a:focus {
     margin-bottom: 15px; }
   .feedback__text {
     font-style: italic; }
+
+.contact {
+  color: var(--color-default-light);
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  .contact > * {
+    position: relative; }
+  .contact--overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .contact .col-2 > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%; }
+  .contact .map {
+    height: 500px; }
+    @media only screen and (max-width: 600px) {
+      .contact .map {
+        display: none; } }
+  @media only screen and (max-width: 600px) {
+    .contact__info {
+      margin-left: 30px; } }
+  .contact__info__el {
+    position: relative; }
+    .contact__info__el .icon {
+      color: var(--color-accent);
+      position: absolute;
+      top: 4px;
+      left: -20px; }
+
+.webp .contact {
+  background: url("../images/eko-kontakt.webp") center center/cover no-repeat; }
+
+.no-webp .contact {
+  background: url("../images/eko-kontakt.jpg") center center/cover no-repeat; }
 
 .container, .navbar-container {
   padding-right: 15px;

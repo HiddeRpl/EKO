@@ -99,10 +99,10 @@ a:hover, a:focus {
   justify-content: space-between;
   & > * {
     flex: 0 1 49%;
-    max-width: 49%;
+    //max-width: 49%;
     @media only screen and (max-width: 768px) {
       flex-basis: 100%;
-      max-width: 100%;
+      //max-width: 100%;
     }
   }
 }
@@ -394,11 +394,67 @@ a:hover, a:focus {
   }
 }
 
+.contact {
+  color: var(--color-default-light);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  & > * {
+    position: relative;
+  }
+
+  &--overlay {
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .col-2 > * {
+    flex: 0 0 45%
+  }
+
+  .map {
+    height: 500px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__info {
+    @media only screen and (max-width: 600px) {
+      margin-left: 30px;
+    }
+
+    &__el {
+      position: relative;
+
+      .icon {
+        color: var(--color-accent);
+        position: absolute;
+        top: 4px;
+        left: -20px;
+      }
+    }
+  }
+}
+
+.webp .contact {
+  background: url('../images/eko-kontakt.webp') center center/cover no-repeat;
+}
+
+.no-webp .contact {
+  background: url('../images/eko-kontakt.jpg') center center/cover no-repeat;
+}
 
 
 @import "grid";
 @import "navbar";
 @import "slider";
 @import "percentage-bar";
-
-
