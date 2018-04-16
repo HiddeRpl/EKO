@@ -197,7 +197,7 @@
     <section id="service" class="col-2 service">
         <figure class="service__image serviceImg">
         </figure>
-        <article class="service__container">
+        <article class="section service__container">
             <h3 class="section-title text-center">SERWIS</h3>
             <p class="section-subtitle text-center">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget
                 tincidunt nibh pulvinar a. Sed porttitor lectus nibh.</p>
@@ -239,7 +239,7 @@
             </div>
         </article>
     </section>
-    <section id="toilets" class="container">
+    <section id="toilets" class="container section">
         <h3 class="section-title text-center">WARIANTY KABIN TOALETOWYCH</h3>
         <div class="toilets">
             <div class="toilets__element">
@@ -300,6 +300,56 @@
                     <h4 class="facts__element__title">CUPS OF COFFEE</h4>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="feedback" class="section-background">
+        <div class="container text-center">
+            <h3 class="section-title">OPINIE</h3>
+            <!--<p class="section-subtitle">Co klienci o nas mówią</p>-->
+            <div class="feedback-wrapper">
+                <article class="feedback">
+                    <h4 class="feedback__name">Jan Kowalski</h4>
+                    <p class="feedback__text">
+                        Sed porttitor lectus nibh. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero
+                        malesuada feugiat.
+                    </p>
+                </article>
+                <article class="feedback">
+                    <h4 class="feedback__name">Grażyna Malina</h4>
+                    <p class="feedback__text">
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                        porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit
+                        nisi, pretium ut lacinia in, elementum id enim.
+                    </p>
+                </article>
+                <article class="feedback">
+                    <h4 class="feedback__name">Magda Borek</h4>
+                    <p class="feedback__text">
+                        Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis
+                        quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <form method="post" action="contact-form.php">
+                <label>Name</label>
+                <input name="name" placeholder="Type Here">
+
+                <label>Email</label>
+                <input name="email" type="email" placeholder="Type Here">
+
+                <label>Subject</label>
+                <input name="subject" placeholder="Type Here">
+
+                <label>Message</label>
+                <textarea name="message" placeholder="Type Here"></textarea>
+                <button name="submit">Submit</button>
+            </form>
         </div>
     </section>
 </main>

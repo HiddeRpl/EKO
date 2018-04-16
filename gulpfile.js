@@ -26,7 +26,7 @@ gulp.task('sass', function () {
 gulp.task('browserSync', function () {
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: 'app'
         }
     })
 });
@@ -69,10 +69,15 @@ gulp.task('lib', function () {
         .pipe(gulp.dest('dist/lib/'))
 });
 
+gulp.task('copy', function () {
+   return gulp.src('app/*.+(png|jpg|php)')
+       .pipe(gulp.dest('dist'))
+});
+
 gulp.task('clean:dist', function () {
     return del.sync('dist');
 });
 
 gulp.task('build', function () {
-    runSequence('clean:dist', 'sass', 'useref', 'jsminify', 'imagemin', 'fonts', 'lib')
+    runSequence('clean:dist', 'sass', 'useref', 'jsminify', 'imagemin', 'fonts', 'lib', 'copy')
 });

@@ -27,3 +27,12 @@
     opacity: 1;
   }
 }
+
+@keyframes feedback {
+  0% {transform: translateX(0);}
+  32% {transform: translateX(0);}
+  33% {transform: translateX(-100%);}
+  65% {transform: translateX(-100%);}
+  66% {transform: translateX(-200%);}
+  100% {transform: translateX(-200%);}
+}
