@@ -1,0 +1,34 @@
+.form__el {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--color-default-dark-tranparent);
+    color: var(--color-default-light);
+    border: 1px solid var(--form-border-color);
+    padding: 10px 10px;
+    height: 46px;
+
+    &--textarea {
+      resize: vertical;
+      height: initial;
+      max-height: 300px;
+    }
+  }
+
+  &__btn {
+    background: var(--color-accent);
+    padding: 0 20px;
+    color: var(--color-default-light);
+    border: 0;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+  }
+}
