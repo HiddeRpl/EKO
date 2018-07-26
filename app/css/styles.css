@@ -294,15 +294,12 @@ a:hover, a:focus {
     margin-bottom: 6px; }
     .service__element__icon {
       padding: 0 15px;
-      margin: auto;
       font-size: 2em;
       color: var(--color-accent); }
-    .service__element__text .title {
-      margin-bottom: 0;
+    .service__element__text {
+      margin: 12px 0;
       font-weight: 400;
       font-size: 1.25em; }
-    .service__element__text .text {
-      margin-top: 0.5em; }
 
 .toilets {
   margin-top: 40px;
@@ -535,7 +532,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0,0,0,0.2);
+  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
@@ -549,7 +546,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0,0,0,0.2);
+  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
@@ -869,7 +866,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0,0,0,0.2);
+  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
