@@ -24,18 +24,6 @@
       height: 25vh;
       background-position: right;
     }
-
-    .webp &__overlay {
-      background: url('../images/overlay.webp') repeat;
-      height: 100%;
-      width: 100%;
-    }
-
-    .no-webp &__overlay {
-      background: url('../images/overlay.png') repeat;
-      height: 100%;
-      width: 100%;
-    }
   }
 
   @for $i from 1 through 3 {

@@ -532,7 +532,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
+  --color-default-dark-tranparent: rgba(0,0,0,0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
@@ -546,7 +546,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
+  --color-default-dark-tranparent: rgba(0,0,0,0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
@@ -805,14 +805,6 @@ a:hover, a:focus {
       .slider .slide {
         height: 25vh;
         background-position: right; } }
-    .webp .slider .slide__overlay {
-      background: url("../images/overlay.webp") repeat;
-      height: 100%;
-      width: 100%; }
-    .no-webp .slider .slide__overlay {
-      background: url("../images/overlay.png") repeat;
-      height: 100%;
-      width: 100%; }
   .webp .slider .slide.fade-in:nth-child(1) {
     background: url("../images/eko-slider1.webp") center center/cover no-repeat; }
   .no-webp .slider .slide.fade-in:nth-child(1) {
@@ -866,7 +858,7 @@ a:hover, a:focus {
   --background-color: #F6F6F6;
   --color-accent: #FF0000;
   --color-default-dark: #000;
-  --color-default-dark-tranparent: rgba(0, 0, 0, 0.2);
+  --color-default-dark-tranparent: rgba(0,0,0,0.2);
   --color-default-light: #fff;
   --color-text: #444;
   --footer-bg-color: #333;
